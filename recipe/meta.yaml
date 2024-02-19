@@ -1,5 +1,5 @@
 {% set name = "GHEtool" %}
-{% set version = "2.2.0" %}
+{% set version = "2.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/GHEtool-{{ version }}.tar.gz
-  sha256: f8496c0619d9cf465e714239df2be0f43ee0f269e8c01d1f601bcafbf179ed37
+  sha256: 3c6e32022defc8259de8fb5db93edb5b2e85c00f2de86390b632147981ea41e3
 
 build:
   noarch: python
@@ -25,12 +25,8 @@ requirements:
     - matplotlib-base >=3.5.2
     - numpy >=1.23.1
     - pandas >=1.4.3
-    - pygfunction >=2.2.1
-    - pyside6 >=6.4.1
-    - configparser >=5.3.0
     - scipy >=1.8.1
-    - pytest >=7.1.2
-    - scikit-optimize >=0.9.0
+    - pygfunction >=2.2.1
 
 test:
   imports:
