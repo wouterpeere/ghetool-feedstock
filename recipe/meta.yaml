@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/GHEtool-{{ version }}.tar.gz
-  sha256: 3c6e32022defc8259de8fb5db93edb5b2e85c00f2de86390b632147981ea41e3
+  sha256: 4f345d8a3b3052e948fe83ac8c52aa9438614637f1e160b08287f75d11554c81
 
 build:
   noarch: python
