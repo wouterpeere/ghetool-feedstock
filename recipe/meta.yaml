@@ -1,14 +1,15 @@
 {% set name = "GHEtool" %}
-{% set version = "2.2.2" %}
 
+{% set version = "2.3.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/15/f0/1671fec387b386c978a9c304659eee5ac7f7f4b9971910d972bb902d0a1a/ghetool-2.2.2.tar.gz
-  sha256: 4f345d8a3b3052e948fe83ac8c52aa9438614637f1e160b08287f75d11554c81
+  url: https://pypi.org/packages/source/g/ghetool/ghetool-{{ version }}.tar.gz
+  sha256: ca78005aecbbe5d2c9fc5af1153112836654e47ff1d3ee4531c2929e92f7f80f
+
 
 build:
   noarch: python
@@ -18,7 +19,7 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - setuptools >=54
+    - setuptools
     - wheel
     - pip
   run:
@@ -26,8 +27,8 @@ requirements:
     - matplotlib-base >=3.5.2
     - numpy >=1.23.1
     - pandas >=1.4.3
+    - pygfunction >=2.2.1,<2.3.0
     - scipy >=1.8.1
-    - pygfunction >=2.2.1
 
 test:
   imports:
