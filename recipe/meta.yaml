@@ -7,7 +7,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/GHEtool-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/g/ghetool/ghetool-{{ version }}.tar.gz
   sha256: ca78005aecbbe5d2c9fc5af1153112836654e47ff1d3ee4531c2929e92f7f80f
 
 
