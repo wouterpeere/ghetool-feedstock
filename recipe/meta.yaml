@@ -1,6 +1,6 @@
 {% set name = "GHEtool" %}
 
-{% set version = "2.3.2" %}
+{% set version = "2.3.3" %}
 
 package:
   name: {{ name|lower }}
@@ -8,13 +8,13 @@ package:
 
 source:
   url: https://pypi.org/packages/source/g/ghetool/ghetool-{{ version }}.tar.gz
-  sha256: ca78005aecbbe5d2c9fc5af1153112836654e47ff1d3ee4531c2929e92f7f80f
+  sha256: abf0c42a490f83ecd742ca769df60e96985457de2dfda9482ef0d77463c7f24b
 
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
